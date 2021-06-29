@@ -1,0 +1,115 @@
+.ids-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.ids-modal-content {
+    background: #f5f5f5;
+    margin: 15% auto; /* 15% from the top and centered */
+    width: 80vw;
+    max-width: 40rem;
+    min-width: 390px;
+    min-height: 22rem;
+    font-family: "Menlo", monospace;
+    font-weight: 200;
+    background: #FFFFFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    padding: 1rem 1rem 0;
+    overflow: auto;
+}
+
+/* The Close Button */
+#ids-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#ids-close:hover,
+#ids-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ids-dual-ring {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.ids-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #2f5876;
+    border-color: #2f5876 transparent #2f5876 transparent;
+    animation: ids-dual-ring 1.2s linear infinite;
+}
+@keyframes ids-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*item*/
+.ids-product-left > img {
+    width: 100%;
+}
+
+ul.ids-product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ids-product-left {
+    width: 15%;
+    float: left;
+}
+
+.ids-product-middle {
+    width: 70%;
+    float: left;
+}
+
+.ids-product-right {
+    width: 15%;
+    float: left;
+}
+
+.ids-product-middle > h1 {
+    font-size: 1em;
+}
+
+.ids-product-list p {
+    font-size: 0.9em;
+}
+
+.ids-product-right > .stock {
+    color: #58bb52;
+}
+
+.ids-product-right > .old-price {
+    text-decoration: line-through;
+}
+
+.ids-product-item {
+    clear: both;
+}
